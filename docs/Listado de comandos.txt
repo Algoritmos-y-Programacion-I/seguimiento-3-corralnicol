@@ -4,9 +4,9 @@ Recuerda que para compilar y ejecutar el proyecto debemos seguir los siguientes 
 
     1-Desde la consola, ubicarnos en la carpeta raíz del proyecto. Esta carpeta es donde se encuentran las subcarpetas bin, docs y src
 
-    2-Para compilar el proyecto: javac -cp src src/ui/NombreDelEjecutable.java -d bin
+    2-Para compilar el proyecto: javac -cp src src/ui/SchoolApp.java -d bin
 
-    3-Para ejecutar el proyecto: java -cp bin ui/NombreDelEjecutable
+    3-Para ejecutar el proyecto: java -cp bin ui/SchoolApp
 
 
 Recuerda que para generar la documentación del proyecto debemos seguir los siguientes pasos:

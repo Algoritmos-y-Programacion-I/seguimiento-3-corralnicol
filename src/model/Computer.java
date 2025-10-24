@@ -1,25 +1,54 @@
 package model;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class Computer {
 
-    /*
-     * ATENCION !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-     * Agregue los atributos (relaciones) necesarios para satisfacer los
-     * requerimientos.
-     */
+    private String serial;
+    private int piso;
+    private int columna;
+    private final List<Incident> incidentes;
 
-    public Computer() {
-
+    public Computer(String serial, int piso, int columna) {
+        this.serial = serial;
+        this.piso = piso;
+        this.columna = columna;
+        this.incidentes = new ArrayList<>();
     }
 
-    /*
-     * ATENCION !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-     * El siguiente metodo esta incompleto.
-     * Agregue los parametros y retorno que sean pertinentes.
-     * Agregue la logica necesaria.
-     */
-    public void addIncident() {
+    public String getSerial() {
+        return serial;
+    }
 
+    public void setSerial(String serialNumber) {
+        this.serial = serialNumber;
+    }
+
+    public int getPiso() {
+        return piso;
+    }
+
+    public void setPiso(int floor) {
+        this.piso = floor;
+    }
+
+    public int getColumna() {
+        return columna;
+    }
+
+    public void setColumna(int row) {
+        this.columna = row;
+    }
+
+    // Devuelve una lista inmutable de los incidentes asociados al computador
+    public List<Incident> getIncidentes() {
+        return Collections.unmodifiableList(incidentes);
+    }
+
+    public void addIncident(Incident incident) {
+        incidentes.add(incident);
     }
 
 }

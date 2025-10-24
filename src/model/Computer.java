@@ -42,7 +42,11 @@ public class Computer {
         this.columna = row;
     }
 
-    // Devuelve una lista inmutable de los incidentes asociados al computador
+    /**
+     * Devuelve una lista inmutable de los incidentes asociados al computador
+     *
+     * @return una lista inmutable de los incidentes asociados al computador.
+     */
     public List<Incident> getIncidentes() {
         return Collections.unmodifiableList(incidentes);
     }

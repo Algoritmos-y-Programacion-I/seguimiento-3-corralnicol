@@ -13,7 +13,7 @@ Recuerda que para generar la documentación del proyecto debemos seguir los sigu
 
     1-Desde la consola, ubicarnos en la carpeta raíz del proyecto. Esta carpeta es donde se encuentran las subcarpetas bin, docs y src
     
-    2-Para generar la documentación del proyecto: javadoc -cp src src/ui/NombreDelEjecutable.java -d docs/API -subpackages ui:model
+    2-Para generar la documentación del proyecto: javadoc -cp src src/ui/SchoolApp.java -d docs/API -subpackages ui:model
 
 
 Recuerda que para cargar archivos en el repositorio debemos seguir los siguientes pasos:
